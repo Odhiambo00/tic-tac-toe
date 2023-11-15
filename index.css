@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    background: linear-gradient(135deg, #000000, #ff6600);
+    color: #ffffff;
+}
+
+header, section, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header p, section p, #game-rules p {
+    font-size: 1.2em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff6600;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.game-rules h2, #game-rules h3 {
+    margin-bottom: 10px;
+}
+
+.game-rules p {
+    font-size: 1.1em;
+}
+
+footer {
+    background: linear-gradient(135deg, #000000, #ff6600);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}

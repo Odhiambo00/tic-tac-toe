@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <title>Welcome to Tic Tac Toe</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-   <div class="wrapper">
-       <div class="container">
-           <button class="button-option"></button>
-           <button class="button-option"></button>
-           <button class="button-option"></button>
-           <button class="button-option"></button>
-           <button class="button-option"></button>
-           <button class="button-option"></button>
-           <button class="button-option"></button>
-           <button class="button-option"></button>
-           <button class="button-option"></button>
-       </div>
-       <button id="restart">Restart</button>
-   </div>
+    <header>
+        <h1>Welcome to Tic Tac Toe</h1>
+        <p>Enjoy the classic game of Tic Tac Toe!</p>
+    </header>
 
-   <div class="popup hide">
-       <p id="message">Sample Message</p>
-       <button id="new-game">New Game</button>
-   </div>
+    <section class="play-now">
+        <h2>Play Now</h2>
+        <p>Click the button below to start playing the game.</p>
+        <button id="playNowBtn">Play Now</button>
+    </section>
 
-    <!-- Script -->
+    <section class="game-rules">
+        <h2>Game Rules and Help</h2>
+        <p>Learn how to play Tic Tac Toe with our simple rules and help section.</p>
+        <a href="#game-rules" id="gameRulesLink">View Game Rules</a>
+    </section>
+
+    <section id="game-rules">
+        <h3>Game Rules</h3>
+        <p>Tic Tac Toe is a classic two-player game where the goal is to get three of your marks in a row.</p>
+        <p>Players take turns placing their "X" or "O" in an empty cell of the 3x3 grid.</p>
+        <p>The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Mezemelik</p>
+    </footer>
+
     <script src="script.js"></script>
+    <script>
+        document.getElementById('playNowBtn').addEventListener('click', function() {
+            window.location.href = 'http://mezemelik.tech/tic-tac-toe.html';
+        });
+
+        document.getElementById('gameRulesLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('game-rules').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
